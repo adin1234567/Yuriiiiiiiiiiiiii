@@ -49,9 +49,6 @@ public class WebPageFragment extends Fragment {
         mProgressBar.setMax(100); // WebChromeClient reports in range 0-100
         mWebView = v.findViewById(R.id.web_view);
         mWebView.getSettings().setJavaScriptEnabled(true);
-        //--
-        mWebView.getSettings().setDomStorageEnabled(true);
-        //--
         mWebView.setWebChromeClient(new WebChromeClient() {
 
             public void onProgressChanged(WebView webView, int newProgress) {
